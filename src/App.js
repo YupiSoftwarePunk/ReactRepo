@@ -15,12 +15,60 @@
 // import {TagsReturn} from './tasks/21_jsx_tags_return.jsx';
 // import {ClosingTags} from './tasks/22_jsx_tags_closing.jsx';
 // import {TagsCorrectness} from './tasks/23_jsx_tags_correctness.jsx';
-import {RunningCode3} from './tasks/24_jsx_running-code.jsx';
+// import {RunningCode3} from './tasks/24_jsx_running-code.jsx';
 
 function App() {
   // return <FirstComp/>;
   // return <ReturnSeveral/>;
-  return <RunningCode3/>;
+  // return <RunningCode3/>;
+
+  // const getDigitsSum = (num) =>
+  //   Number(num % 10) + Number((num % 100) / 10) + Number(num / 100);
+  // const res = Math.floor(getDigitsSum(123));
+  // return <div>{res}</div>;
+
+  // const doSmthng = () => alert("yooo");
+  // const Mouse = () => alert("789789");
+  // return (
+  //   <button onClick={doSmthng} onMouseMove={Mouse}>
+  //     click
+  //   </button>
+  // );
+
+  // const show1 = () => alert(1);
+  // const show2 = () => alert(2);
+
+  // return (
+  //   <div>
+  //     <button onClick={show1}>act1</button>
+  //     <button onClick={show2}>act2</button>
+  //   </div>
+  // );
+
+  // const show = (num) => alert(num);
+
+  // return (
+  //   <div>
+  //     <button onClick={() => show(1)}>act1</button>
+  //     <button onClick={() => show(2)}>act2</button>
+  //     <button onClick={() => show(3)}>act3</button>
+  //   </div>
+  // );
+
+  // return (
+  //   <div>
+  //     <button onClick={(event) => console.log(event.target)}>act1</button>
+  //     <button onClick={(event) => console.log(event)}>act2</button>
+  //   </div>
+  // );
+
+  const show = (a, event, b) => console.log(a, event, b);
+  return (
+    <div>
+      {/* <button onClick={(event) => console.log(event.target)}>act1</button> */}
+      <button onClick={(event) => show(event, "damn", 67)}>act2</button>
+    </div>
+  );
 }
 
 export default App;
