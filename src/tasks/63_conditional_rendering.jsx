@@ -5,23 +5,23 @@ export const ConditRender = () => {
 
   let message;
   if (checked) {
-    message = <div>
+    message = (
+      <div>
         <h2>Ура, вам уже есть 18</h2>
-            <p>
-                здесь расположен контент только для взрослых
-            </p>
-        </div>;
+        <p>здесь расположен контент только для взрослых</p>
+      </div>
+    );
   } else {
-    message = <div>
-            <p>
-                увы, вам еще нет 18 лет:(
-            </p>
-        </div>;
+    message = (
+      <div>
+        <p>увы, вам еще нет 18 лет</p>
+      </div>
+    );
   }
 
   return (
     <div>
-        <h1>Вам > 18?</h1>
+      <h1>Вам больше 18?</h1>
       <input
         type="checkbox"
         checked={checked}
