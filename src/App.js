@@ -17,7 +17,8 @@
 // import {TagsCorrectness} from './tasks/23_jsx_tags_correctness.jsx';
 // import {RunningCode3} from './tasks/24_jsx_running-code.jsx';
 // import { TagsArr } from "./tasks/37_forming_tags-array.jsx";
-import { InputBunding } from "./tasks/71_object-inputs-binding.jsx";
+import { useState } from "react";
+import { User } from "./tasks/83_child-array.jsx";
 
 function App() {
   // return <FirstComp/>;
@@ -72,7 +73,84 @@ function App() {
   //   </div>
   // );
 
-  return <InputBunding />;
+  // --------------- 82 ----------------------------------
+  // const name1 = "Mike";
+  // const cost1 = "1000";
+
+  // const name2 = "John";
+  // const cost2 = "2000";
+
+  // const name3 = "Dan";
+  // const cost3 = "3000";
+
+  // return (
+  //   <div>
+  //     <Employee name={name1} salary={cost1} />
+  //     <Employee name={name2} salary={cost2} />
+  //     <Employee name={name3} salary={cost3} />
+  //   </div>
+  // );
+
+  // --------------- 83 ----------------------------------
+  const users = [
+    { id: 0, name: "user1", surname: "surn1", age: 30 },
+    { id: 1, name: "user2", surname: "surn2", age: 31 },
+    { id: 2, name: "user3", surname: "surn3", age: 32 },
+  ];
+
+  //   return (
+  //     <table>
+  //       <thead>
+  //         <tr>
+  //           <th>Имя</th>
+  //           <th>Фамилия</th>
+  //           <th>Возраст</th>
+  //         </tr>
+  //       </thead>
+  //       <tbody>
+  //         {users.map((user) => (
+  //           <User
+  //             key={user.id}
+  //             name={user.name}
+  //             surname={user.surn}
+  //             age={user.age}
+  //           />
+  //         ))}
+  //       </tbody>
+  //     </table>
+  //   );
+  // }
+
+  // ---------------- 84 ------------------------
+  // const result = users.map((prod) => {
+  //   return (
+  //     <User
+  //       key={prod.id}
+  //       name={prod.name}
+  //       surname={prod.surname}
+  //       age={prod.age}
+  //     />
+  //   );
+  // });
+
+  // return <div>{result}</div>;
+
+  // ------------------ 85 ---------------------
+  const initUsers = [
+    { id: 0, name: "user1", surname: "surn1", age: 30 },
+    { id: 1, name: "user2", surname: "surn2", age: 31 },
+    { id: 2, name: "user3", surname: "surn3", age: 32 },
+  ];
+
+  const initProds = () => {};
+
+  const [prods, setProds] = useState(initProds);
+
+  const items = prods.map((prod) => {
+    return <User key={prod.id} name={prod.name} cost={prod.cost} />;
+  });
+
+  return <div>{items}</div>;
 }
 
 export default App;
