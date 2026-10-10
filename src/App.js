@@ -17,7 +17,7 @@
 // import {TagsCorrectness} from './tasks/23_jsx_tags_correctness.jsx';
 // import {RunningCode3} from './tasks/24_jsx_running-code.jsx';
 // import { TagsArr } from "./tasks/37_forming_tags-array.jsx";
-import { InputBunding } from "./tasks/71_object-inputs-binding.jsx";
+import { ArrOperations } from "./tasks/74_array-operations.jsx";
 
 function App() {
   // return <FirstComp/>;
@@ -72,7 +72,7 @@ function App() {
   //   </div>
   // );
 
-  return <InputBunding />;
+  return <ArrOperations />;
 }
 
 export default App;
