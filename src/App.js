@@ -18,7 +18,7 @@
 // import {RunningCode3} from './tasks/24_jsx_running-code.jsx';
 // import { TagsArr } from "./tasks/37_forming_tags-array.jsx";
 import { useState } from "react";
-import { User } from "./tasks/83_child-array.jsx";
+import { ObjArrOperats } from "./tasks/76_objects-array-operations.jsx";
 
 function App() {
   // return <FirstComp/>;
@@ -136,21 +136,23 @@ function App() {
   // return <div>{result}</div>;
 
   // ------------------ 85 ---------------------
-  const initUsers = [
-    { id: 0, name: "user1", surname: "surn1", age: 30 },
-    { id: 1, name: "user2", surname: "surn2", age: 31 },
-    { id: 2, name: "user3", surname: "surn3", age: 32 },
-  ];
+  // const initUsers = [
+  //   { id: 0, name: "user1", surname: "surn1", age: 30 },
+  //   { id: 1, name: "user2", surname: "surn2", age: 31 },
+  //   { id: 2, name: "user3", surname: "surn3", age: 32 },
+  // ];
 
-  const initProds = () => {};
+  // const initProds = () => {};
 
-  const [prods, setProds] = useState(initProds);
+  // const [prods, setProds] = useState(initProds);
 
-  const items = prods.map((prod) => {
-    return <User key={prod.id} name={prod.name} cost={prod.cost} />;
-  });
+  // const items = prods.map((prod) => {
+  //   return <User key={prod.id} name={prod.name} cost={prod.cost} />;
+  // });
 
-  return <div>{items}</div>;
+  // return <div>{items}</div>;
+
+  return <ObjArrOperats />;
 }
 
 export default App;
