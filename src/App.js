@@ -18,7 +18,7 @@
 // import {RunningCode3} from './tasks/24_jsx_running-code.jsx';
 // import { TagsArr } from "./tasks/37_forming_tags-array.jsx";
 import { useState } from "react";
-import { ObjArrOperats } from "./tasks/76_objects-array-operations.jsx";
+import { Practise2 } from "./tasks/practise2.jsx";
 
 function App() {
   // return <FirstComp/>;
@@ -152,7 +152,7 @@ function App() {
 
   // return <div>{items}</div>;
 
-  return <ObjArrOperats />;
+  return <Practise2 />;
 }
 
 export default App;
