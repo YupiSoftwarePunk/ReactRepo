@@ -1,40 +1,40 @@
-import { useState } from "react";
+import { useState } from 'react';
 
 export const ObjArrOperats = () => {
   const initNotes = [
     {
-      id: "GYi9G_uC4gBF1e2SixDvu",
-      prop1: "value11",
-      prop2: "value12",
-      prop3: "value13",
+      id: 'GYi9G_uC4gBF1e2SixDvu',
+      prop1: 'value11',
+      prop2: 'value12',
+      prop3: 'value13',
     },
     {
-      id: "IWSpfBPSV3SXgRF87uO74",
-      prop1: "value21",
-      prop2: "value22",
-      prop3: "value23",
+      id: 'IWSpfBPSV3SXgRF87uO74',
+      prop1: 'value21',
+      prop2: 'value22',
+      prop3: 'value23',
     },
     {
-      id: "JAmjRlfQT8rLTm5tG2m1L",
-      prop1: "value31",
-      prop2: "value32",
-      prop3: "value33",
+      id: 'JAmjRlfQT8rLTm5tG2m1L',
+      prop1: 'value31',
+      prop2: 'value32',
+      prop3: 'value33',
     },
   ];
 
   const [notes, setNotes] = useState(initNotes);
-  const [input1, setInput1] = useState("");
-  const [input2, setInput2] = useState("");
-  const [input3, setInput3] = useState("");
-  const [editId, setEditId] = useState("");
+  const [input1, setInput1] = useState('');
+  const [input2, setInput2] = useState('');
+  const [input3, setInput3] = useState('');
+  const [editId, setEditId] = useState('');
 
   const doSmth = (id) => {
     setNotes(
       notes.map((note) => {
         if (note.id === id) {
-          note.prop1 += "!";
-          note.prop2 += "!";
-          note.prop2 += "!";
+          note.prop1 += '!';
+          note.prop2 += '!';
+          note.prop2 += '!';
 
           return note;
         }

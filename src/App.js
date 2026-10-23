@@ -17,8 +17,8 @@
 // import {TagsCorrectness} from './tasks/23_jsx_tags_correctness.jsx';
 // import {RunningCode3} from './tasks/24_jsx_running-code.jsx';
 // import { TagsArr } from "./tasks/37_forming_tags-array.jsx";
-import { useState } from "react";
-import { Practise2 } from "./tasks/practise2.jsx";
+import { useState } from 'react';
+import { ModelsViaStates } from './tasks/90_modes-via-states.jsx';
 
 function App() {
   // return <FirstComp/>;
@@ -93,9 +93,9 @@ function App() {
 
   // --------------- 83 ----------------------------------
   const users = [
-    { id: 0, name: "user1", surname: "surn1", age: 30 },
-    { id: 1, name: "user2", surname: "surn2", age: 31 },
-    { id: 2, name: "user3", surname: "surn3", age: 32 },
+    { id: 0, name: 'user1', surname: 'surn1', age: 30 },
+    { id: 1, name: 'user2', surname: 'surn2', age: 31 },
+    { id: 2, name: 'user3', surname: 'surn3', age: 32 },
   ];
 
   //   return (
@@ -152,7 +152,7 @@ function App() {
 
   // return <div>{items}</div>;
 
-  return <Practise2 />;
+  return <ModelsViaStates />;
 }
 
 export default App;
