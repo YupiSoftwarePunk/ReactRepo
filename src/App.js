@@ -19,7 +19,7 @@
 // import { TagsArr } from "./tasks/37_forming_tags-array.jsx";
 import { useState } from 'react';
 import { ModelsViaStates } from './tasks/90_modes-via-states.jsx';
-import { TruthOneSOurce } from './tasks/96_truth-one-source.jsx';
+import { GlobalHandlers } from './tasks/206_hooks_use-effect_global-handlers.jsx';
 
 function App() {
   // return <FirstComp/>;
@@ -153,7 +153,7 @@ function App() {
 
   // return <div>{items}</div>;
 
-  return <TruthOneSOurce />;
+  return <GlobalHandlers />;
 }
 
 export default App;
