@@ -20,6 +20,9 @@
 import { useState } from 'react';
 import { ModelsViaStates } from './tasks/90_modes-via-states.jsx';
 import { GlobalHandlers } from './tasks/206_hooks_use-effect_global-handlers.jsx';
+import { MyContext } from './tasks/208_supreme_hooks_context.jsx';
+import { Parent } from './tasks/210_hooks_context-update.jsx';
+import './styles/styles.css';
 
 function App() {
   // return <FirstComp/>;
@@ -152,8 +155,20 @@ function App() {
   // });
 
   // return <div>{items}</div>;
+  const [age, setAge] = useState(50);
 
-  return <GlobalHandlers />;
+  return (
+    <MyContext.Provider value={age}>
+      <Parent />
+      <button
+        onClick={() => {
+          setAge((prevAge) => prevAge / 2);
+        }}
+      >
+        click
+      </button>
+    </MyContext.Provider>
+  );
 }
 
 export default App;
